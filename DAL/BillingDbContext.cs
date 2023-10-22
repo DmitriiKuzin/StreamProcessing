@@ -9,7 +9,7 @@ public class BillingDbContext: DbContext
     {
         var a = new NpgsqlConnectionStringBuilder();
         a.Host = Environment.GetEnvironmentVariable("POSTGRES_HOST");
-        a.Database = "market";
+        a.Database = "billing";
         a.Username = "postgres";
         a.Password = Environment.GetEnvironmentVariable("POSTGRES_PASSWORD");
         optionsBuilder.UseNpgsql(a.ToString());

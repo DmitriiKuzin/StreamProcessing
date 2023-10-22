@@ -5,5 +5,5 @@ helm install otus .\deploy\stream-processing\ --namespace otus-sp --create-names
 ```
 
 ```shell
-newman run .\distributed_transaction.postman_collection.json
+newman run .\StreamProcessing.postman_collection.json
 ```
